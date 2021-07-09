@@ -26,7 +26,7 @@ export default function OneRecipe ({data, preview}) {
 
     if (router.isFallback) {
         return <div>...Loading</div>
-    }
+    } 
 
     const { data: recipe } = usePreviewSubscription(recipeQuery, {
         params: { slug: data.recipe?.slug.current },
